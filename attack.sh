@@ -9,3 +9,6 @@ find . -type f -exec exiftool {} + | grep -iE "flag|galf|Zmxh|RkxB|Rmxh|picoCTF|
 
 echo "Searching using binwalk"
 find . -type f -exec binwalk {} + | grep -iE "flag|galf|Zmxh|RkxB|Rmxh|picoCTF|FTCocip|cGljb0NU"
+
+echo "searching using zsteg"
+find . -type f -exec zsteg {} + | grep -iE "flag|galf|Zmxh|RkxB|Rmxh|picoCTF|FTCocip|cGljb0NU"
